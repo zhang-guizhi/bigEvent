@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
     <link rel="stylesheet" href="./assets/css/login.css">
 </head>
 
@@ -27,6 +28,7 @@
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-password"></i>
                 <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                <i class="iconfont">&#xe61d;</i>
             </div>
 
             <!-- 第三项: 按钮 -->
@@ -58,11 +60,13 @@
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-password"></i>
                 <input type="password" name="password" required lay-verify="required|len" placeholder="请输入密码" autocomplete="off" class="layui-input pwd">
+                <i class="iconfont">&#xe61d;</i>
             </div>
             <!-- 第三项: 确认密码 -->
             <div class="layui-form-item">
                 <i class="layui-icon layui-icon-password"></i>
                 <input type="password" required lay-verify="required|len|same" placeholder="请输入确认密码" autocomplete="off" class="layui-input">
+                <i class="iconfont">&#xe61d;</i>
             </div>
             <!-- 第四项: 按钮 -->
             <div class="layui-form-item">
@@ -75,9 +79,7 @@
         </form>
         <!-- 注册的表单 end -->
     </div>
-
     <!-- 注册的盒子 end -->
-
     <script src="./assets/lib/layui/layui.all.js"></script>
     <script src="./assets/lib/jquery.js"></script>
     <script src="./assets/js/common.js"></script>
