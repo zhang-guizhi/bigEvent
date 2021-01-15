@@ -71,3 +71,17 @@ $(".login form").on('submit', function(e) {
         }
     })
 });
+
+// 点击显示隐藏密码
+var flag = 1;
+$(".iconfont").on("click", function() {
+    if (flag) {
+        $(this).html('&#xe6e1;');
+        $(this).prev().prop('type', 'text');
+        flag = 0;
+    } else {
+        $(this).html('&#xe61d;');
+        $(this).prev().prop('type', 'password');
+        flag = 1;
+    }
+})

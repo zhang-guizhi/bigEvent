@@ -66,3 +66,13 @@ form a {
 .register {
     display: none;
 }
+
+
+/* 字体图标show */
+
+.iconfont {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
