@@ -20,10 +20,15 @@ $.ajaxPrefilter(function(option) {
     // 所以在complete中,判断是否是身份认证失败如果是跳转到登录页
     option.complete = function(xhr) {
         var res = xhr.responseJSON;
-        if (res && res.status === 1 && res.message === '身份认证失败！');
-        // 清除掉过期的token
-        localStorage.removeItem('token');
-        // 跳转到登录页面
-        location.href = './login.html';
+        if (res && res.status === 1 && res.message === '身份认证失败！') {
+            // 清除掉过期的token
+            localStorage.removeItem('token');
+            // 跳转到登录页面
+            location.href = './login.html';
+        }
+        // 其他错误
+        if (res && res.status === 1) {
+            layer.msg(res.message);
+        }
     }
 })
