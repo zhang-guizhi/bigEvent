@@ -1,5 +1,6 @@
 // ---------------------切换两个盒子-------------------
 $('.login a').on("click", function() {
+    $(".layui-input").val('');
     $(".login").hide().next().show();
 });
 
