@@ -6,3 +6,13 @@ body {
 .layui-form {
     width: 500px;
 }
+
+
+/* 字体图标 */
+
+.iconfont {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
